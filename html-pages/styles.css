@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+}
+
+/*  Navbar section */
+nav{
+    height: 10vh;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: #004274;
+    color: #fff; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav_logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav_logo a h1{
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.nav-hamburger-icon{
+    display: none;
+}
+.nav-hamburger-icon i{
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/*  Home section */
+.home-section {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    background: linear-gradient(to right, #007cf0, #00dfd8);
+    color: white;
+    padding: 20px;
+ }
+ 
+ .home-section h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #00ffd5;
+  }
+  
+  .home-section p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+  }
+  .btn-primary {
+    margin-top: 10px;
+    background-color: #00ffd5;
+    color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+
+  /* services section*/
+
+  .pricing_heading {
+    text-align: center;
+  }
+
+  .pricing_heading h1{
+
+    font-size: 44px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  .course_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .course_card {
+    background: #ffffff;
+    padding: 12px;
+    flex-basis: 31%;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-basis: 30%;
+  }
+  
+  .course_card .icons {
+    display: flex;
+    gap: 0.4rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    align-items: center;
+  }
+  
+  .course_card .icons img {
+    width: 38px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .course_card .card_heading {
+    background: #0c5273;
+    padding: 5px;
+    color: white;
+    border-radius:5px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .course_card h1 {
+    margin: 1rem 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .course_card .pricing_data {
+    margin: 1.3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .course_card .pricing_data h5 {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .course_card .pricing_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .course_card .pricing_bottom .pricing_bottom_btn {
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: 1px solid white;
+    background: #0d92f4;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .course_card .pricing_bottom .pricing_bottom_btn:hover {
+    background: #035ad1;
+  }
+  
+  .course_card .pricing_bottom .pricing_bottom_view {
+    color: #0d92f4;
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    font-size: 18px;
+  }
+  
+
+  /* contact section */
+  .contact-us {
+    color: #333;
+    
+  }
+  
+  .contact-us__heading {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-us__heading h1 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .contact__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    flex-wrap: wrap;
+  }
+  
+  .contact_container__details,
+  .contact_data {
+    flex-basis: 48%;
+    background: white;
+    padding: 36px;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact__container label {
+    font-weight: 600;
+    display: block;
+    margin: 1rem 0 0.3rem;
+  }
+  
+  .contact__container label:after {
+    content: " *";
+    color: red;
+  }
+  
+  .contact__container input,
+  .contact__container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    margin-bottom: 18px;
+  }
+  
+  .contact__container button {
+    padding: 1rem 1.4rem;
+    border-radius: 24px;
+    font-size: 18px;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contact__container button:hover {
+    background-color: rgba(0, 0, 255, 0.795);
+
+  }
+
+  .contact_data h2,
+  .contact_data h3 {
+    margin-top: 18px;
+    margin-bottom: 9px;
+  }
+  
+  .contact_data p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  
+  .contact_data i {
+    color: blue;
+    margin-left: 5px;
+  }
+
+  /*  Footer section */
+  footer {
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+    padding: 1rem 0;
+    color: #fff;
+  }
+
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+  }
+  
+  .footer_container h1{
+    font-size: 30px;
+  }
+
+
+  .footer_content h3 {
+    border-bottom: 0.125rem solid #ffff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .footer_content p {
+    margin: 0.6rem 0;
+  }
+  
+  .footer_content form {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .footer_content form input {
+    padding: 0.4rem;
+    margin-right: 0.6rem;
+    border-radius: 0.2rem;
+    border: none;
+    flex-basis: 60%;
+  }
+  
+  .footer_content form button {
+    padding: 0.4rem;
+    border-radius: 24px;
+    font-size: 16px;
+    border: 1px solid white;
+    background: blue;
+    color: white;
+    cursor: pointer;
+  }
+
+  .footer_content .icons {
+    display: flex;
+    justify-content: space-around; 
+    gap:30px;
+    margin-top: 0.6rem; 
+  }
+
+  .footer_content h3{
+    text-align: center;
+  }
+  
+  .footer_content .icons li {
+    list-style: none; 
+  }
+  
+  .footer_content .icons i {
+    font-size: 34px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top:60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap:0;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+
+    .nav-hamburger-icon{
+        display: block;
+    }
+
+    .home-section{
+      align-items: center;
+      justify-content: end;
+        margin-bottom: 20px;
+    }
+
+    .home-section h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    
+    .home-section p {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+     
+      .btn-primary {
+        padding: 4px 10px;
+        font-size: 10px;
+      }
+
+
+
+      .pricing_heading h1{
+        font-size: 28px;
+      }
+
+      .course_cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap:10px;
+      }
+      .course_card {
+        flex-basis: 100%;
+
+      }
+
+
+
+      .contact__container{
+        flex-direction: column;
+      }
+
+      .contact-us__heading h1 {
+        font-size: 28px;
+      }
+
+      .contact__container button {
+        padding: 0.6rem 1rem;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+    
+      .contact_container__details,
+      .contact_data {
+        flex-basis: 100%;
+      }
+
+      .footer_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap:10px;
+        text-align: center;
+      }
+
+      .footer_content{
+            margin-top: 10px;
+      }
+  
+}
