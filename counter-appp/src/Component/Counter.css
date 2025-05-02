@@ -1,0 +1,17 @@
+.btn-group{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+}
+
+.btn{
+    margin-top: 10px;
+    background-color: #00ffd5;
+    color: #000;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
