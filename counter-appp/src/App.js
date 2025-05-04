@@ -1,11 +1,13 @@
 
 import './App.css';
 import Counter from './Component/Counter';
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   return (
     <div className="App">
-       <Counter initialValue={0}/>
+       <ToastContainer/>
+       <Counter initialValue={0} toast={toast}/>
     </div>
   );
 }

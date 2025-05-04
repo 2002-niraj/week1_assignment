@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState} from "react";
 import "./Counter.css";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -6,7 +6,7 @@ import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import TungstenTwoToneIcon from '@mui/icons-material/TungstenTwoTone';
 import DarkModeTwoToneIcon from '@mui/icons-material/DarkModeTwoTone';
 
-export default function Counter({ initialValue }) {
+export default function Counter({ initialValue , toast }) {
   const [count, setCount] = useState(initialValue);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -20,6 +20,7 @@ export default function Counter({ initialValue }) {
     if (count > 0) {
       setCount(count - 1);
     } else {
+     toast.error("Counter is already at 0!");
       return;
     }
   };
@@ -31,7 +32,8 @@ export default function Counter({ initialValue }) {
        
         document.body.style.backgroundColor = "#2c3e50"; 
         document.body.style.color = "#f1c40f"; 
-        document.title = "Dark-mode"          
+        document.title = "Dark-mode"     
+        toast.info("Dark mode is enabled"); 
       } else {
         
         document.body.style.backgroundColor = "#ffff"; 

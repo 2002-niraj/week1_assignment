@@ -7,7 +7,9 @@
 html,body{
     height: 100%;
     width: 100%;
+    font-size: 16px;
     background-color: skyblue;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*  Navbar section */
@@ -62,7 +64,6 @@ nav ul li a{
 
 /*  Home section */
 .home-section {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 94vh; 
     display: flex;
     flex-direction: column;
@@ -92,7 +93,7 @@ nav ul li a{
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 12px;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 18px;
   }
 
@@ -135,7 +136,6 @@ nav ul li a{
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 10px;
-    flex-basis: 30%;
   }
   
   .course_card .icons {
@@ -191,20 +191,22 @@ nav ul li a{
     border-radius: 25px;
     font-size: 16px;
     border: 1px solid white;
-    background: #0d92f4;
-    color: white;
+    background: blue;
+    color: #fff;
+    font-weight: bold;
     cursor: pointer;
   }
   
   .course_card .pricing_bottom .pricing_bottom_btn:hover {
-    background: #035ad1;
+    background: rgba(0, 0, 255, 0.658);
   }
   
   .course_card .pricing_bottom .pricing_bottom_view {
-    color: #0d92f4;
+    color: blue;
     cursor: pointer;
     padding: 0.7rem 1rem;
     font-size: 18px;
+    font-weight: bold;
   }
   
 
@@ -262,11 +264,12 @@ nav ul li a{
   }
   
   .contact__container button {
-    padding: 1rem 1.4rem;
+    padding: 0.8rem;
     border-radius: 24px;
     font-size: 18px;
     border: none;
     background: blue;
+    font-weight: bold;
     color: white;
     cursor: pointer;
   }
@@ -307,7 +310,7 @@ nav ul li a{
   }
   
   .footer_container h1{
-    font-size: 30px;
+    font-size: 34px;
   }
 
 
@@ -338,13 +341,14 @@ nav ul li a{
   }
   
   .footer_content form button {
-    padding: 0.4rem;
-    border-radius: 24px;
-    font-size: 16px;
+    padding: 0.6rem;
+    border-radius: 22px;
+    font-size: 14px;
     border: 1px solid white;
     background: blue;
     color: white;
     cursor: pointer;
+    font-weight: bold;
   }
 
   .footer_content .icons {
