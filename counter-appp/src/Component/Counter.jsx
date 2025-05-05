@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState,useEffect} from "react";
 import "./Counter.css";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -7,9 +7,17 @@ import TungstenTwoToneIcon from '@mui/icons-material/TungstenTwoTone';
 import DarkModeTwoToneIcon from '@mui/icons-material/DarkModeTwoTone';
 
 export default function Counter({ initialValue , toast }) {
-  const [count, setCount] = useState(initialValue);
+  const [count, setCount] = useState(()=>{
+    const savedCount = localStorage.getItem("counter");
+    return (savedCount)? parseInt(savedCount):initialValue
+  });
   const [darkMode, setDarkMode] = useState(false);
+ 
 
+  useEffect(() => {
+    localStorage.setItem("counter", count);
+  }, [count]);
+  
   const increment = () => {
     setCount(count + 1);
   };
@@ -20,7 +28,7 @@ export default function Counter({ initialValue , toast }) {
     if (count > 0) {
       setCount(count - 1);
     } else {
-     toast.error("Counter is already at 0!");
+     toast.error("Counter is already at 0 !");
       return;
     }
   };
